@@ -1,0 +1,141 @@
+
+/* Style */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+section {
+    position: relative;
+    padding: 15px;
+    width: 90%;
+}
+
+div {
+    position: relative;
+    border: 3.5px solid black;
+    width: 100%;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+p {
+    position: relative;
+    clear: right;
+}
+
+.content{
+    padding: 5px;
+    border: none;
+    margin: 3px;
+    background-color: gray;
+    font-family: sans-serif;
+    color: black;
+    font-size: 1em;
+    text-transform: lowercase;
+    height: 150px;
+    overflow: auto;
+}
+
+
+.category01 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 1.25em;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(250, 176, 188);
+}
+
+.category02 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 1.25em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 70, 70);
+}
+
+.category03 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 1.25em;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: rgb(255, 255, 123);
+}
+
+
+
+/* Simple Responsive Framework */
+.row {
+width: 90%;
+}
+
+/********** Desktop View (992px and above) **********/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/********** Tablet View (between 768px and 991px) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-md-12 {
+        float: left;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-md-12:nth-of-type(3) {
+        clear: both;
+    }
+
+}
+
+/********** Mobile View (equal to or less than 767px) **********/
+@media (max-width: 767px) {
+    .col-lg-4,
+    .col-md-6,
+    .col-md-12,
+    .col-sm-12 {
+        float: none;
+        width: 100%;
+    }
+}
